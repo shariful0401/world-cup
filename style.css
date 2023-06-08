@@ -104,3 +104,32 @@
   margin: 20px;
   margin-bottom: 15px;
 }
+
+/* footer section  */
+footer{
+  margin-top: 100px;
+  height: 400px;
+  width: 100%;
+  background-color: black;
+}
+.title{
+  margin-top: 100px;
+}
+.footer-title h1{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+.footer-link{
+  margin-left: 70px;
+  margin-top: 50px;
+}
+.footer-link a{
+  text-decoration: none;
+  color: white;
+  margin: 50px;
+}
+.footer-title{
+  padding: 30px;
+}
