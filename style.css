@@ -39,28 +39,46 @@
 }
 
 /* blog section start  */
-.blog-button{
+.blog-button {
   display: flex;
 }
-.ab {
+
+.button-container {
   margin-top: 50px;
   padding: 20px;
   height: 230px;
-  width: 200px;
+  width: 250px;
   background-color: black;
   border-radius: 20px;
 }
 
-.abc button {
+.buttons button{
   display: block;
   background-color: azure;
-  padding: 15px 50px;
-  margin: 20px;
+  padding: 10px 40px;
+  margin: 10px;
+  /* height: 50px; */
+  width: 200px;
   border-radius: 20px;
   font-size: 20px;
 }
+.buttons a{
+  display: block;
+  background-color: azure;
+  padding: 10px 40px;
+  margin: 10px;
+  /* height: 50px; */
+  width: 110px;
+  border-radius: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
 
 #blog {
+  background-color: red;
+}
+#upcomming{
   background-color: red;
 }
 
@@ -106,30 +124,115 @@
 }
 
 /* footer section  */
-footer{
+footer {
   margin-top: 100px;
-  height: 400px;
   width: 100%;
   background-color: black;
 }
-.title{
+
+.title {
   margin-top: 100px;
 }
-.footer-title h1{
+
+.footer-title h1 {
   color: white;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
 }
-.footer-link{
+
+.footer-link {
   margin-left: 70px;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
-.footer-link a{
+
+.footer-link a {
   text-decoration: none;
   color: white;
   margin: 50px;
 }
-.footer-title{
+
+.footer-title {
   padding: 30px;
+}
+
+/* Responsive part  */
+/* Mobile device  */
+@media only screen and (max-width:668px) {
+  .header {
+    flex-direction: column-reverse;
+  }
+
+  .blog-button {
+    flex-direction: column;
+  }
+
+  .button-container {
+    margin-left: 50px;
+  }
+
+  .blog-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-link a {
+    display: block;
+  }
+}
+
+/* For Tablet device  */
+
+@media only screen and (max-width:992px) {
+  .blog-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-link {
+    display: inline-block;
+  }
+
+  .button-container {
+    background-color: white;
+    margin-left: 50px;
+    height: 0px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .blog-button {
+    flex-direction: column;
+  }
+
+  .buttons {
+    display: flex;
+  }
+}
+
+/* another part of website  */
+.match-section{
+  display: flex;
+  justify-content: space-around;
+  
+}
+.matches{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 40px;
+  /* margin-left:100px ; */
+}
+.images{
+  display: flex;
+  align-items: center;
+}
+.images img{
+  margin: 5px;
+}
+.upcomming-matches{
+  margin: 30px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  /* width: 229px; */
+}
+.match-info{
+  padding-left: 25px;
 }
